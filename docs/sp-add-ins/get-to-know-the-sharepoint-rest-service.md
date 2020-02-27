@@ -95,7 +95,7 @@ The following table contains typical REST endpoint URL examples to get you start
 | Retrieves all lists on a site                                                         | `lists`                                     | GET             | Not applicable   |
 | Retrieves a single list's metadata                                                    | `lists/getbytitle('listname')`              | GET             | Not applicable   |
 | Retrieves items within a list                                                         | `lists/getbytitle('listname')/items`        | GET             | Not applicable   |
-| Retrieves a specific property of a document<br />*(in this case, the document title)* | `lists/getbytitle('listname')?select=Title` | GET             | Not applicable   |
+| Retrieves a specific property of a document<br />*(in this case, the document title)* | `lists/getbytitle('listname')/items({id})?$select=Title` | GET             | Not applicable   |
 | Creates a list                                                                        | `lists`                                     | POST            | See sample       |
 | Adds an item to a list                                                                | `lists/getbytitle('listname')/items`        | POST            | See sample       |
 
